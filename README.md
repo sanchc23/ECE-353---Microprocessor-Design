@@ -1,6 +1,8 @@
 # Microprocessor Design
 Work for ECE 353: Introduction to Microprocessor Design at UW-Madison
 
+Taken in the Spring of 2020.
+
 The class consisted of one large project, split into multiple modules.
 
 Individually built code for components to be used in the final product, such as UART, Timers, and EEPROM.
