@@ -1,0 +1,101 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text) refers to project_hardware_init.o(.text) for initialize_hardware
+    main.o(.text) refers to pokemon_battle.o(.text) for pokemon_battle_main
+    project_hardware_init.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    project_hardware_init.o(.text) refers to launchpad_io.o(.text) for lp_io_init
+    project_hardware_init.o(.text) refers to lcd.o(.text) for lcd_config_gpio
+    project_hardware_init.o(.text) refers to io_expander.o(.text) for io_expander_init
+    project_hardware_init.o(.text) refers to ps2.o(.text) for ps2_initialize
+    project_hardware_init.o(.text) refers to timers.o(.text) for gp_timer_config_32
+    project_hardware_init.o(.text) refers to project_hardware_init.o(.conststring) for .conststring
+    project_interrupts.o(.text) refers to project_interrupts.o(.data) for PS2_X_DATA
+    project_interrupts.o(.text) refers to pokemon_battle.o(.data) for TIMER1_ALERT
+    pokemon_battle.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    pokemon_battle.o(.text) refers to launchpad_io.o(.text) for lp_io_set_pin
+    pokemon_battle.o(.text) refers to lcd.o(.text) for lcd_draw_box
+    pokemon_battle.o(.text) refers to pokemon_battle.o(.constdata) for .constdata
+    pokemon_battle.o(.text) refers to pokemon_battle.o(.data) for TIMER1_ALERT
+    pokemon_battle.o(.text) refers to final_images.o(.constdata) for trainer1Bitmaps
+    pc_buffer.o(.text) refers to malloc.o(i.malloc) for malloc
+    accel.o(.text) refers to spi_select.o(.text) for spi_select_init
+    accel.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    accel.o(.text) refers to spi.o(.text) for initialize_spi
+    eeprom.o(.text) refers to i2c.o(.text) for i2cVerifyBaseAddr
+    eeprom.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    ft6x06.o(.text) refers to i2c.o(.text) for I2CMasterBusy
+    ft6x06.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    lcd.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    lcd.o(.text) refers to strlen.o(.text) for strlen
+    lcd.o(.text) refers to alphabet.o(.constdata) for alphabet_size
+    ps2.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    ps2.o(.text) refers to adc.o(.text) for initialize_adc
+    serial_debug.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    serial_debug.o(.text) refers to pc_buffer.o(.text) for pc_buffer_init
+    serial_debug.o(.text) refers to uart.o(.text) for uart_init
+    serial_debug.o(.text) refers to main.o(.text) for DisableInterrupts
+    serial_debug.o(.text) refers to serial_debug.o(.data) for Rx_Interrupts_Enabled
+    serial_debug.o(.text) refers to serial_debug.o(.bss) for UART0_Tx_Buffer
+    serial_debug.o(.text) refers to stdout.o(.data) for __stdout
+    spi_select.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    io_expander.o(.text) refers to i2c.o(.text) for I2CMasterBusy
+    io_expander.o(.text) refers to gpio_port.o(.text) for gpio_enable_port
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(STACK) for __initial_sp
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(.text) for Reset_Handler
+    startup_tm4c123.o(RESET) refers to project_interrupts.o(.text) for UART0_Handler
+    startup_tm4c123.o(RESET) refers to serial_debug.o(.text) for UART0_Handler
+    startup_tm4c123.o(.text) refers to system_tm4c123.o(.text) for SystemInit
+    startup_tm4c123.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_tm4c123.o(.text) refers to system_tm4c123.o(.data) for SystemCoreClock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to startup_tm4c123.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to startup_tm4c123.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to startup_tm4c123.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__aligned_malloc$realloc) refers to startup_tm4c123.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_tm4c123.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_tm4c123.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
