@@ -3,7 +3,7 @@ Work for ECE 353: Introduction to Microprocessor Design at UW-Madison
 
 The class consisted of one large project, split into multiple modules.
 
-Individual built code for components to be used in the final product, such as UART, Timers, and EEPROM.
+Individually built code for components to be used in the final product, such as UART, Timers, and EEPROM.
 
 The final project we decided to make was a small Pokemon game.  
 
